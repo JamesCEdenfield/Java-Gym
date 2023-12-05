@@ -7,6 +7,7 @@ import jakarta.persistence.*;
 @Entity
 public class member {
 		
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -43,6 +44,10 @@ public class member {
 //		this.gymID = gymID;
 //		this.joinDate = joinDate;
 //		this.lastVisit = lastVisit;
+	}
+	
+	public member() {
+		
 	}
 	
 	public Long getID() {
