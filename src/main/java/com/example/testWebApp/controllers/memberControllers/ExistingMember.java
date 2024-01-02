@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 //import org.springframework.web.bind.annotation.RestController;
 
+import com.example.testWebApp.models.member.member;
 import com.example.testWebApp.services.member.ExistingMemberService;
 
 @Controller
@@ -19,8 +20,8 @@ public class ExistingMember {
 	
 	
 	@GetMapping("existing-member")
-	public String checkIn() {
-		return existingMemberService.checkIn();
+	public member checkIn() {
+		return existingMemberService.checkIn((long) 2);
 	}
 
 }
